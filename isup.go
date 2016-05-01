@@ -5,7 +5,7 @@ import ("log"; "flag"; "time"; "net/http"; "os/exec")
 
 var (
         interval        =       flag.Int("intval", 1, "the check interval in seconds")
-        url             =       flag.String("url", "localhost", "the url to check")
+        url             =       flag.String("url", "http://google.com", "the url to check")
         media           =       flag.String("media", "none", "the media file to play when the link become available")
 )
 
