@@ -25,7 +25,7 @@ func main() {
                                         log.Println("Still Closed ...")
                                 } else if resp != nil && resp.StatusCode >= 200 {
                                         log.Println("Available now ...")
-                                        exec.Command("cvlc", *media).Run()
+                                        exec.Command("cvlc", *media, "-R").Run()
                                         break
                                 }
                 }
